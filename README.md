@@ -20,19 +20,20 @@ This is the application running on the SOMA Connect bridges. You can download an
   
   2. Paste the following in it then press ctrl+x to exit nano and press y to save file changes:
   
-  ```[Unit]
-      Description=Soma-Connect Server
-      After=syslog.target network-online.target
+  ```
+  [Unit]
+  Description=Soma-Connect Server
+  After=syslog.target network-online.target
 
-      [Service]
-      Type=simple
-      ExecStart=/usr/lib/soma-connect/soma-connect
-      Restart=on-failure
-      RestartSec=10
-      KillMode=process
+  [Service]
+  Type=simple
+  ExecStart=/usr/lib/soma-connect/soma-connect
+  Restart=on-failure
+  RestartSec=10
+  KillMode=process
 
-      [Install]
-      WantedBy=multi-user.target
+  [Install]
+  WantedBy=multi-user.target
   ```
    3. Reload daemon
    
