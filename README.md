@@ -1,8 +1,8 @@
-# soma-connect
+# SOMA Connect
 
 This is the application running on the SOMA Connect bridges. You can download and install it directly on your raspberry pi.
 
-#Installation Instructions
+## Installation Instructions
 
   Download and save release file 
 
@@ -51,7 +51,7 @@ This is the application running on the SOMA Connect bridges. You can download an
    To view the logs from the application you can type ```journalctl -f -u soma-connect```
    
    
- #Add Soma Connect to Homekit
+ ## Add Soma Connect to Homekit
  
   1. Download and install the iOS app [Smart Shades](https://apps.apple.com/us/app/smart-shades/id1016406862) on your iPhone / iPad
   
