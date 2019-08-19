@@ -13,7 +13,7 @@ This is the application running on the SOMA Connect bridges. You can download an
 **HOOBS must be connected via Wi-Fi, not ethernet cable**
 
 
-## Installation Instructions
+## Installation Instructions - Run these commands from the HOOBS UI Terminal
 
   Download and save release file 
 
