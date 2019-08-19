@@ -2,10 +2,15 @@
 
 This is the application running on the SOMA Connect bridges. You can download and install it directly on your raspberry pi.
 
+
+## Important Notes before installing
+
 **Supported Devices**
 - Raspberry Pi 3B
 - Raspberry Pi 3B+
 - Raspberry Pi 4
+
+**HOOBS must be connected via Wi-Fi, not ethernet cable**
 
 
 ## Installation Instructions
@@ -71,7 +76,7 @@ This is the application running on the SOMA Connect bridges. You can download an
   
   4. Hold your iPhone / iPad close to your Raspberry Pi
   
-  5. When prompted, select your home wifi network and input the wifi password
+  5. When prompted, select your home wifi network and input the wifi password (if you tried to add this to Homekit before, you must click Empty Homekit Cache)
   
   6. (Optional) Write down the MAC Address prompted if you want to configure it to work with Alexa later
   
