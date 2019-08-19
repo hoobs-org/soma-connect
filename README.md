@@ -2,6 +2,12 @@
 
 This is the application running on the SOMA Connect bridges. You can download and install it directly on your raspberry pi.
 
+**Supported Devices**
+- Raspberry Pi 3B
+- Raspberry Pi 3B+
+- Raspberry Pi 4
+
+
 ## Installation Instructions
 
   Download and save release file 
