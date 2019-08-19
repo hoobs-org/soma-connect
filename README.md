@@ -22,7 +22,7 @@ This is the application running on the SOMA Connect bridges. You can download an
   
   ```sudo nano /etc/systemd/system/soma-connect.service```
   
-  2. Paste the following in it then press ctrl+x to exit nano and press y to save file changes:
+  2. Paste the following in it then press ctrl+x to exit nano and press y then enter to save file changes:
   
   ```
   [Unit]
