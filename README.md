@@ -8,6 +8,10 @@ This is the application running on the SOMA Connect bridges. You can download an
 
   ```sudo wget https://github.com/hoobs-org/soma-connect/releases/download/1.8.37/soma-connect_1.8.37_armhf.deb -O soma-connect.deb```
   
+  Install dependencies
+  
+  ```sudo apt-get install ifplugd```
+  
   Install package
   
   ```sudo dpkg -i soma-connect.deb```
