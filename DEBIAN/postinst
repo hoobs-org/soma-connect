@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+systemctl daemon-reload || true
+/bin/hciconfig hci0 down || true
+sed -i 's/AutoEnable=true/AutoEnable=false/g' /etc/bluetooth/main.conf || true
+sed -i 's/^dtparam=pwr_led_trigger=none//' /boot/config.txt || true
+sed -i 's/^dtparam=pwr_led_activelow=off//' /boot/config.txt || true
+systemctl stop smbd || true
+systemctl disable smbd || true
+rm /etc/dhcp/dhclient-enter-hooks.d/samba || true
+systemctl start soma-connect.service || true
+systemctl restart rsyslog || true
+crontab /etc/soma-connect-crontab.conf || true
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "`systemctl is-active soma-connect.service`" == "active" ] 
+then
+	systemctl stop soma-connect.service
+fi
+
