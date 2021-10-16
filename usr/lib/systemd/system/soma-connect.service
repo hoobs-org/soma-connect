@@ -1,0 +1,22 @@
+[Unit]
+Description=SOMA Connect
+After=network.target
+StartLimitBurst=3
+StartLimitIntervalSec=60s
+
+[Service]
+Environment=HCI_CHANNEL_USER=0
+ExecStartPre=-/bin/bash -e /lib/systemd/system/devrepoinit.sh
+ExecStart=/usr/lib/soma-connect/soma-connect
+ExecStopPost=/bin/sh -c "echo mmc0 > /sys/class/leds/led0/trigger"
+ExecStopPost=/bin/sh -c "echo 255 > /sys/class/leds/led0/brightness"
+ExecStopPost=/bin/sh -c "echo default-on > /sys/class/leds/led1/trigger"
+ExecStopPost=/bin/sh -c "echo 255 > /sys/class/leds/led1/brightness"
+Restart=always
+RestartSec=1s
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=soma-connect
+
+[Install]
+WantedBy=multi-user.target
